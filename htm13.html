@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nested table</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    <table
+      border="1"
+      cellspacing="1"
+      cellpadding="8"
+      bordercolor="purple"
+      width="100%"
+    >
+      <tr>
+        <td>ABC</td>
+        <td>DEF</td>
+        <td colspan="1">GHI</td>
+
+        <td>ABC</td>
+      </tr>
+      <tr>
+        <td rowspan="3">item1</td>
+        <td rowspan="=3">item2</td>
+        <td>
+          <table
+            width="100%"
+            border="1"
+            cellspacing="1"
+            cellpadding="8"
+            bordercolor="blue"
+          >
+            <tr>
+              <td>name1</td>
+              <td>price1</td>
+            </tr>
+            <tr>
+              <td>name2</td>
+              <td>price2</td>
+            </tr>
+            <tr>
+              <td>name3</td>
+              <td>price3</td>
+            </tr>
+          </table>
+        </td>
+        <td rowspan="3">item3</td>
+      </tr>
+    </table>
+  </body>
+</html>

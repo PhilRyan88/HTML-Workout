@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Second</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style type="text/css">
+      body {
+        color: brown;
+      }
+    </style>
+    <script>
+      function toUpper() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+      }
+      function toLower() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toLowerCase();
+      }
+    </script>
+  </head>
+  <body>
+    <p><font face="metropolis">This is a sample html</font></p>
+    <span>Enter your name</span><input type="text" id="fname" />
+    <button onClick="toUpper()">To Upper</button> &nbsp;<button
+      onClick="toLower()"
+    >
+      to Lower
+    </button>
+  </body>
+</html>

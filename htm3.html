@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>third</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style type="text/css">
+      body {
+        color: blueviolet;
+      }
+    </style>
+    <script>
+      function toUpper() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+        var result = document.getElementById("result");
+        result.textContent = x.value;
+      }
+      function toLower() {
+        var y = document.getElementById("fname");
+        y.value = y.value.toLowerCase();
+        var result = document.getElementById("result");
+        result.textContent = y.value;
+      }
+    </script>
+  </head>
+  <body>
+    <p><font face="hanson">This is a sample html page</font></p>
+    <span>Enter your name here</span><input type="text" id="fname" />
+    <button onClick="toUpper()">To Upper</button> &nbsp;
+    <button onClick="toLower()">to Lower</button>
+    <span align="center" id="result"></span>
+  </body>
+</html>
